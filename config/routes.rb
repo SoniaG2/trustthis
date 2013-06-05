@@ -1,4 +1,12 @@
 Trustthis::Application.routes.draw do
+  get "about" => 'pages#about'
+  root :to => 'pages#about'
+
+get "welcome" => 'pages#welcome'
+  root :to => 'pages#welcome'
+
+  get "menu" => 'pages#menu'
+  root :to => 'pages#menu'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
