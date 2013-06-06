@@ -1,11 +1,13 @@
 Trustthis::Application.routes.draw do
-  get "about" => 'pages#about'
+root :to => 'pages#welcome'
+#set welcome page as the "home page" - first thing people see when go to site
+#get "welcome" => 'pages#welcome'
+ # root :to => 'pages#welcome'
+
+get "about" => 'pages#about'
   root :to => 'pages#about'
-
-get "welcome" => 'pages#welcome'
-  root :to => 'pages#welcome'
-
-  get "menu" => 'pages#menu'
+  
+get "menu" => 'pages#menu'
   root :to => 'pages#menu'
   # The priority is based upon order of creation:
   # first created -> highest priority.
