@@ -4,7 +4,7 @@ require 'rails/all'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
+  Bundler.require *Rails.groups(:assets => %w(development test))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
@@ -62,5 +62,8 @@ module Trustthis
     #Due to a change in Rails that prevents images from being compiled in vendor and lib, 
     #you'll need to add the following line to your application.rb:
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    #Trying to troubleshoot Heroku error & required for Devise on Heroku
+    config.assets.initialize_on_precompile = false
   end
 end

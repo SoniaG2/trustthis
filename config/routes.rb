@@ -1,4 +1,6 @@
 Trustthis::Application.routes.draw do
+  devise_for :users
+
 root :to => 'pages#welcome'
 #set welcome page as the "home page" - first thing people see when go to site
 #get "welcome" => 'pages#welcome'
