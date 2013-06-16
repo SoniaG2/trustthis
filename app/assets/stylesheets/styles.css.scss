@@ -1,3 +1,4 @@
+
 /* To change Font
 $ baseFontFamily: Oxygen
 #@import url(http://fonts.googleleapis.com/css?family=Oxygen);
@@ -17,6 +18,8 @@ body {
 }
 
 @import 'bootstrap-responsive';
+@import url('/bootply/themes/metroid/theme.css');
+
 
 .navbar-inner{
     @include box-shadow(none !important);
