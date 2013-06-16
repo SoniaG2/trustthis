@@ -10,8 +10,9 @@
     </a>
      
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">TrustThis</a>
-     
+    
+     <%= link_to "TrusThis", root_path, class: "brand" %>
+
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse collapse">
     	<ul class="nav">
@@ -22,11 +23,12 @@
 
 			<ul class="nav pull-right">
         <% if user_signed_in? %>
-            <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
-            <% else %>
-		   	<li><%= link_to "Login", new_user_session_path %></li>
+          <li><%= link_to "Edit Password", edit_user_registration_path %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+          <li><%= link_to "Login", new_user_session_path %></li>
         <% end %>
-			</ul>
+      </ul>
 	   </div>
      
     </div>

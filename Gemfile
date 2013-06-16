@@ -23,4 +23,3 @@ group :assets do
   
 end
 
-
