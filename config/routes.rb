@@ -1,19 +1,34 @@
 Trustthis::Application.routes.draw do
   resources :pins
 
-
   devise_for :users
 
-root :to => 'pages#welcome'
+root :to => 'pages#about'
 #set welcome page as the "home page" - first thing people see when go to site
 #get "welcome" => 'pages#welcome'
  # root :to => 'pages#welcome'
 
-get "about" => 'pages#about'
-  root :to => 'pages#about'
   
 get "menu" => 'pages#menu'
   root :to => 'pages#menu'
+
+get "symptoms" => 'pages#symptoms'
+  root :to => 'pages#symptoms'
+
+get "bc" => 'pages#bc'
+  root :to => 'pages#bc'
+
+get "condom" => 'pages#condom'
+  root :to => 'pages#condom'
+
+get "pregoptions" => 'pages#pregoptions'
+  root :to => 'pages#pregoptions'
+
+get "expert" => 'pages#expert'
+  root :to => 'pages#expert'
+
+get "services" => 'pages#services'
+  root :to => 'pages#services'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
