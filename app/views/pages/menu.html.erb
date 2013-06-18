@@ -1,5 +1,5 @@
 <div class="hero-unit">
-<div class="column span5">
+<div class="column span4">
 <div class="padding">
 <div class="full span5">
                       
@@ -14,64 +14,62 @@
     <p> <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
      </p>
      </div>
+        </div><!--/row-->
 
-     <div class="row-fluid">
-     <div class="span5">
-       <!--<p>I'm having a reproductive health issue and I don't know what it is.</p>-->
-       <p><%= link_to "Reproductive Health Symptoms", symptoms_path, class: "btn btn-large" %></p>
-     </div>
+<!--<div class="row-fluid"> -->
+          <div class="btn-group">
+         <div class="span5">
+           <!--<p>I'm having a reproductive health issue and I don't know what it is.</p>-->
+           <p><%= link_to "Reproductive Health Symptoms", symptoms_path, class: "btn btn-primary btn-large" %></p>
+         </div>
 
                                           
-                      <div class="row-fluid">
-                        <div class="span5">
-                          <!--<h2>Options After Unprotected Sex</h2>
-                          <p>Ooops, the condom broke. Learn what you can do to protect against unwanted pregnancy.</p>-->
-                          <p><%= link_to "Oops, Condom Broke", condom_path, class: "btn btn-large" %></p>
-                        </div>
+<!-- <div class="row-fluid"> -->
+         <div class="span5">
+         <!--<h2>Options After Unprotected Sex</h2>
+          <p>Ooops, the condom broke. Learn what you can do to protect against unwanted pregnancy.</p>-->
+          <p><%= link_to "Oops, Condom Broke", condom_path, class: "btn btn-primary btn-large" %></p>
+        </div>
 
-                        <div class="span5">
-                          <!-- <h2>I'm pregnant - options?</h2> 
-                          <p>Learn what your options are if you are pregnant.</p>-->
-                          <p><%= link_to "I'm pregnant - options?", pregoptions_path, class: "btn btn-large" %></p>
-                        </div>
+        <div class="span5">
+         <!-- <h2>I'm pregnant - options?</h2> 
+          <p>Learn what your options are if you are pregnant.</p>-->
+          <p><%= link_to "I'm pregnant - options?", pregoptions_path, class: "btn btn-primary btn-large" %></p>
+        </div>
 
+        <div class="span5">
+        <!-- <h2>Call/Chat with an Expert</h2> 
+          <p>Ask a trained health educator your question over text, chat or email.</p>-->
+          <p><%= link_to "Reach an Expert", expert_path, class: "btn btn-primary btn-large" %></p> 
+        </div><!--/row-->
 
-                        <div class="span5">
-                          <!-- <h2>Call/Chat with an Expert</h2> 
-                          <p>Ask a trained health educator your question over text, chat or email.</p>-->
-              <p><%= link_to "Reach an Expert", pregoptions_path, class: "btn btn-large" %></p>
-                        </div>
-                      </div><!--/row-->
-                                     
+				<div class="span5">
+				  <!--<h2>Methods Right for Me</h2>
+					<p>Birth control options decision tree</p>-->
+					<p><%= link_to "Birth Control Options", bc_path, class: "btn btn-primary btn-large" %></p>
+				</div>
+
+        <div class="span5">
+          <!--<h2>Methods Right for Me</h2>
+          <p>Birth control options decision tree</p>-->
+          <p><%= link_to "Find a Clinic", services_path, class: "btn btn-primary btn-large" %></p>
+        </div>
+        
+        <div class="span5">
+        <!--<h2>Who the heck made this thing?</h2>
+          <p>Who the heck made this thing?</p>-->
+          <p><%= link_to "Who the heck made this thing?", root_path, class: "btn btn-primary btn-large" %></p>
+        </div>
+                        
+        <div class="span5">
+          <!--<h2>Rate This App//Tell us what you think</h2>-->
+          
+          <p><%= link_to "Rate the App", rate_path, class: "btn btn-primary btn-large" %></p>
+        </div>
+        
+        </div><!--/row-->
                       
-
-                        
-
-						 <div class="span5">
-						     <!--<h2>Methods Right for Me</h2>
-						     <p>Birth control options decision tree</p>-->
-						        <p><%= link_to "Birth Control Options", bc_path, class: "btn btn-large" %></p>
-						     </div>
-						     </div><!--/row-->
-<div class="span5">
-                          <!--<h2>Who the heck made this thing?</h2>
-                          <p>Who the heck made this thing?</p>-->
-                          <p><%= link_to "Who the heck made this thing?", root_path, class: "btn btn-large" %></p>
-                        </div>
-                        
-                        <div class="span5">
-                          <h2>Rate This App//Tell us what you think</h2>
-                          <p>Insert some quality control closed and open-ended questions.</p>
-                          <p><a href="#" class="btn">View details »</a></p>
-                        </div>
-                      </div><!--/row-->
-                      
-                        
-                        
-    
-
-
-<!-- THIS ONE MAY BE NON ESSENTIAL SO IGNORING FOR NOW.
+    <!-- THIS MAY BE NON-ESSENTIAL SO IGNORING FOR NOW.
        <div class="span5">
         <h2>Prevention Options</h2>
          <p>Some tips on how to stay healthy.</p>

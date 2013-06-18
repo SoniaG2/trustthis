@@ -8,7 +8,6 @@ root :to => 'pages#about'
 #get "welcome" => 'pages#welcome'
  # root :to => 'pages#welcome'
 
-  
 get "menu" => 'pages#menu'
   root :to => 'pages#menu'
 
@@ -29,6 +28,12 @@ get "expert" => 'pages#expert'
 
 get "services" => 'pages#services'
   root :to => 'pages#services'
+
+get "rate" => 'pages#rate'
+  root :to => 'pages#rate'
+
+get "skg" => 'pages#skg'
+  root :to => 'pages#skg'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
