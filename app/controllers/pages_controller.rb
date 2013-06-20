@@ -26,6 +26,16 @@ class PagesController < ApplicationController
   def services
   end
 
+  def stayhealthy
+  end
+
+  def commpartners
+  end
+
   def action
   end
+
+  def rateapp
+  end
+
 end

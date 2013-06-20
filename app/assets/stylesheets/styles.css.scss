@@ -1,7 +1,7 @@
 
 /* To change Font
 $baseFontFamily: Oxygen
-#@import url(http://fonts.googleleapis.com/css?family=Oxygen);
+@import url(http://fonts.googleleapis.com/css?family=Oxygen);
 */
 
 /* For more customizing using Bootstrap:
@@ -33,4 +33,8 @@ body {
     a{
         color: $gray;
     }
+}
+
+.footer, .push {
+	clear: both;
 }

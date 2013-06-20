@@ -1,80 +1,80 @@
 <div class="hero-unit">
-<div class="column span4">
-<div class="padding">
+<!--<div class="column span4"> -->
+<!--<div class="padding">-->
 <div class="full span5">
                       
  <h1>TrusTThis (T2)</h1>
    	<p> 
-    	Sex info that is medically accurate and true when you want to access or share it with others. </p>
-    <p>  Contact: Sonia K. Gonzalez,MPH sgonzalez1@gc.cuny.edu</p>
+    	Sex info that is medically accurate and true when you want it. </p>
+    
 
     <!-- <h2>Symptoms</h2>-->
      
-
-    <p> <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
+    <p> <%= link_to "Sign In", new_user_session_path, class: "btn btn-info btn-med" %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-info btn-med" %>
      </p>
-     </div>
+
+     
         </div><!--/row-->
 
 <!--<div class="row-fluid"> -->
           <div class="btn-group">
-         <div class="span5">
-           <!--<p>I'm having a reproductive health issue and I don't know what it is.</p>-->
-           <p><%= link_to "Reproductive Health Symptoms", symptoms_path, class: "btn btn-primary btn-large" %></p>
+            <div class="span5">
+         <!--<div class="span5">
+           <p>I'm having a reproductive health issue and I don't know what it is.</p>-->
+           <p><%= link_to "Reproductive Health Symptoms", symptoms_path, class: "btn btn-primary btn-block btn-large" %></p>
          </div>
 
                                           
 <!-- <div class="row-fluid"> -->
+      <div class="span5">
+        <!--<h2>Staying Healthy</h2>
+         <p>Some tips on how to stay healthy.</p>-->
+         <p><%= link_to "Staying Healthy", stayhealthy_path, class: "btn btn-primary btn-block btn-large" %></p>
+       </div>
+
          <div class="span5">
          <!--<h2>Options After Unprotected Sex</h2>
           <p>Ooops, the condom broke. Learn what you can do to protect against unwanted pregnancy.</p>-->
-          <p><%= link_to "Oops, Condom Broke", condom_path, class: "btn btn-primary btn-large" %></p>
+          <p><%= link_to "Oops, Condom Broke", condom_path, class: "btn btn-primary btn-block btn-large" %></p>
         </div>
 
+        
         <div class="span5">
          <!-- <h2>I'm pregnant - options?</h2> 
           <p>Learn what your options are if you are pregnant.</p>-->
-          <p><%= link_to "I'm pregnant - options?", pregoptions_path, class: "btn btn-primary btn-large" %></p>
+          <p><%= link_to "I'm pregnant - options?", pregoptions_path, class: "btn btn-block btn-primary btn-large" %></p>
         </div>
 
+        
         <div class="span5">
         <!-- <h2>Call/Chat with an Expert</h2> 
           <p>Ask a trained health educator your question over text, chat or email.</p>-->
-          <p><%= link_to "Reach an Expert", expert_path, class: "btn btn-primary btn-large" %></p> 
+          <p><%= link_to "Ask an Expert", expert_path, class: "btn btn-primary btn-block btn-large" %></p> 
         </div><!--/row-->
 
-				<div class="span5">
+				
+        <div class="span5">
 				  <!--<h2>Methods Right for Me</h2>
 					<p>Birth control options decision tree</p>-->
-					<p><%= link_to "Birth Control Options", bc_path, class: "btn btn-primary btn-large" %></p>
+					<p><%= link_to "Birth Control Options", bc_path, class: "btn btn-primary btn-block btn-large" %></p>
 				</div>
 
         <div class="span5">
-          <!--<h2>Methods Right for Me</h2>
-          <p>Birth control options decision tree</p>-->
-          <p><%= link_to "Find a Clinic", services_path, class: "btn btn-primary btn-large" %></p>
+          <!--<h2>Rate This App//Tell us what you think</h2>-->
+          <p> <%= link_to "Rate Me", rateapp_path, class: "btn btn-info btn-block btn-med" %></p>
         </div>
-        
-        <div class="span5">
-        <!--<h2>Who the heck made this thing?</h2>
+       <div class="span5">
+        <!-- <h2>Who the heck made this thing?</h2>
           <p>Who the heck made this thing?</p>-->
-          <p><%= link_to "Who the heck made this thing?", root_path, class: "btn btn-primary btn-large" %></p>
+          <p> <%= link_to "Who made this app?", commpartners_path, class: "btn btn-info btn-block btn-med" %></p>
         </div>
                         
-        <div class="span5">
-          <!--<h2>Rate This App//Tell us what you think</h2>-->
-          
-          <p><%= link_to "Rate the App", rate_path, class: "btn btn-primary btn-large" %></p>
-        </div>
+        
         
         </div><!--/row-->
                       
-    <!-- THIS MAY BE NON-ESSENTIAL SO IGNORING FOR NOW.
-       <div class="span5">
-        <h2>Prevention Options</h2>
-         <p>Some tips on how to stay healthy.</p>
-         <p><a href="#" class="btn">Prevention Options</a></p>
-       </div>-->
+       
                       
                     </div>
                 </div>

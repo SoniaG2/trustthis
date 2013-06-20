@@ -29,11 +29,17 @@ get "expert" => 'pages#expert'
 get "services" => 'pages#services'
   root :to => 'pages#services'
 
-get "rate" => 'pages#rate'
-  root :to => 'pages#rate'
+get "rateapp" => 'pages#rateapp'
+  root :to => 'pages#rateapp'
 
 get "skg" => 'pages#skg'
   root :to => 'pages#skg'
+
+get "stayhealthy" => 'pages#stayhealthy'
+  root :to =>'pages#stayhealthy'
+
+get "commpartners" => 'pages#commpartners'
+  root :to =>'pages#commpartners'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
