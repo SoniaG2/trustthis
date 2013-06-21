@@ -2,30 +2,27 @@
 <html>
 	<head>
 	  <title>TrustThis </title>
-	  <%= stylesheet_link_tag    "application", :media => "all" %>
-	  <%= javascript_include_tag "application" %>
+		  <%= stylesheet_link_tag    "application", :media => "all" %>
+		  <%= javascript_include_tag "application" %>
 	  
 	  <%= csrf_meta_tags %>
 		<%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
 	</head>	
+	
 	<body>
 		<%= render 'layouts/header' %>
-		 <p> 
-    	Sex info that is medically accurate and true when you want it. </p>
+    	
     	<div class="container">
 		 	<% flash.each do |name, msg| %>
 		 		<%= content_tag(:div, msg, class: "alert alert-#{name}")%>
-		
+		</p>	
 
 		<p class="notice"><%= notice %></p>
        	<p class="alert"><%= alert %></p>
 		 		<%end %>
 		 		
 			<%= yield %>
-				<ul class="pager">
-			    <li><a href="#">Previous</a></li>
-			    <li><a href="#">Next</a></li>
-			    </ul>
+			
 			<%= render 'layouts/footer' %>
 		
 		</div>

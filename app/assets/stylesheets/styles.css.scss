@@ -13,8 +13,21 @@ $navbarBackground: White;
 $btnPrimaryBackground: Purple;
 
 @import 'bootstrap';
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header{
+    margin-top: 20px;
+    color: #fff;
+}
+
 body {
-	padding-top: 40px;
+	padding-top: 20px;
+	margin-right:10px;
+
 }
 
 @import 'bootstrap-responsive';
@@ -24,15 +37,18 @@ body {
 .navbar-inner{
     @include box-shadow(none !important);
     border: 0;
+    color: #fff;
 }
 
 
 .footer{
-    margin-top: 40px;
+    margin-top: 20px;
+    padding-top: 5px;
     color: $grayLight;
     a{
         color: $gray;
     }
+
 }
 
 .footer, .push {
