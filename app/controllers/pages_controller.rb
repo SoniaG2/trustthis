@@ -38,4 +38,8 @@ class PagesController < ApplicationController
   def rateapp
   end
 
+  def _routes_context
+  controller
+  end
+
 end

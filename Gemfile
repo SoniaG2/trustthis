@@ -6,6 +6,11 @@ gem 'devise'
 gem 'simple_form'
 gem 'therubyracer'
 
+#To set your Ruby version add this line to your Gemfile:"
+source 'https://rubygems.org'
+ruby '1.9.3'
+
+
 group :production do
   gem 'pg'
 end
