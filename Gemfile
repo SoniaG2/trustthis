@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'therubyracer'
+gem "paperclip", "~> 3.0"
 
 #To set your Ruby version add this line to your Gemfile:"
 source 'https://rubygems.org'
