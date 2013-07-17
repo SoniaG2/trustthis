@@ -16,7 +16,7 @@
   margin: 20px;
 }
 
-#menu-body {
+.menu-body {
   li.span5 {
     list-style: none;
     margin-bottom: 20px;
@@ -33,7 +33,17 @@
   }
 }
 
-.container {
-  margin-top: 20px;
+.container .row {
+  margin-top: 90px;
 }
 
+li.dropdown.open ul.dropdown-menu li a {
+  color: black;
+  &:hover {
+    color: white;
+  }
+}
+
+.condom img {
+  margin: 20px;
+}
