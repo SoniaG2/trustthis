@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 0;
+}
+
+#footer {
+  margin-top: 40px;
+  a {
+    padding: 20px;
+      &:hover {
+        text-decoration: none;
+      }
+  }
+}
+
+#menu-head {
+  margin: 20px;
+}
+
+#menu-body {
+  li.span5 {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-right: 25px;
+  }
+}
