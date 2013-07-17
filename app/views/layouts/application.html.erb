@@ -4,28 +4,27 @@
 	  <title>TrustThis </title>
 		  <%= stylesheet_link_tag    "application", :media => "all" %>
 		  <%= javascript_include_tag "application" %>
-	  
+
 	  <%= csrf_meta_tags %>
 		<%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
-	</head>	
-	
+	</head>
+
 	<body>
 		<%= render 'layouts/header' %>
-    	
-    	<div class="container">
-		 	<% flash.each do |name, msg| %>
-		 		<%= content_tag(:div, msg, class: "alert alert-#{name}")%>
-		</p>	
 
-		<p class="notice"><%= notice %></p>
-       	<p class="alert"><%= alert %></p>
-		 		<%end %>
-		 		
+  	<div class="container">
+		 	<% flash.each do |name, msg| %>
+			 	<p>
+			 		<%= content_tag(:div, msg, class: "alert alert-#{name}")%>
+				</p>
+
+				<p class="notice"><%= notice %></p>
+		    <p class="alert"><%= alert %></p>
+	 		<%end %>
+
 			<%= yield %>
-			
-			<%= render 'layouts/footer' %>
-		
 		</div>
+		<%= render 'layouts/footer' %>
 	</body>
 </html>
 
