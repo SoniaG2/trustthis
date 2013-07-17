@@ -15,11 +15,9 @@ html lang="en"
 
   body
     = render 'layouts/edit_header'
-
     .container
       .row
         .span12
           = bootstrap_flash
           = yield
-
-    = render 'layouts/footer'
+      = render 'layouts/footer'
