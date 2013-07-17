@@ -1,0 +1,33 @@
+div.hero-unit#menu-head
+  h2 T2: TrustThis
+  p Sex info that's medically accurate and true when you want it.
+  .btn-group
+    = link_to "Sign In", new_user_session_path, class: "btn btn-info btn-med"
+    = link_to "Sign Up", new_user_registration_path, class: "btn btn-info btn-med"
+    = link_to "Edit Password", new_user_registration_path, class: "btn btn-info btn-med"
+
+div#menu-body
+  ul
+    li.span5
+      = link_to "Reproductive Health Symptoms", symptoms_path, class: "btn btn-primary btn-block btn-large"
+
+    li.span5
+      = link_to "Staying Healthy", stayhealthy_path, class: "btn btn-primary btn-block btn-large"
+
+    li.span5
+      = link_to "Oops, Condom Broke", condom_path, class: "btn btn-primary btn-block btn-large"
+
+    li.span5
+      = link_to "I'm pregnant - options?", pregoptions_path, class: "btn btn-block btn-primary btn-large"
+
+    li.span5
+      = link_to "Ask an Expert", expert_path, class: "btn btn-primary btn-block btn-large"
+
+    li.span5
+      = link_to "Birth Control Options", bc_path, class: "btn btn-primary btn-block btn-large"
+
+    li.span5
+      = link_to "Rate Me", rateapp_path, class: "btn btn-info btn-block btn-med"
+    li.span5
+      = link_to "Who made this app?", commpartners_path, class: "btn btn-info btn-block btn-med"
+
