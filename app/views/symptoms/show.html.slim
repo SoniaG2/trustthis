@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @symptom.title
+p
+  strong Content:
+  = @symptom.content
+
+= link_to 'Edit', edit_symptom_path(@symptom)
+'|
+= link_to 'Back', symptoms_path

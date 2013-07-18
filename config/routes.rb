@@ -1,4 +1,7 @@
 Trustthis::Application.routes.draw do
+  resources :symptoms
+
+
   resources :pins
 
   devise_for :users
