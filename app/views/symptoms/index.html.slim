@@ -1,21 +1,11 @@
-h1 Listing symptoms
+div.hero-unit
+  h2 T2 Symptoms Library
+  p Sex info that is medically accurate and true when you want it.
+  = link_to 'New Symptom', new_symptom_path
 
-table
-  tr
-    th Title
-    th Content
-    th
-    th
-    th
+div.menu-body
+  ul
+    - @symptoms.each do |symptom|
+      li.span5 = link_to symptom.title, symptom, class: 'btn btn-primary btn-block btn-large'
 
-  - @symptoms.each do |symptom|
-    tr
-      td = symptom.title
-      td = symptom.content
-      td = link_to 'Show', symptom
-      td = link_to 'Edit', edit_symptom_path(symptom)
-      td = link_to 'Destroy', symptom, :confirm => 'Are you sure?', :method => :delete
 
-br
-
-= link_to 'New Symptom', new_symptom_path
