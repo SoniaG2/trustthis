@@ -1,4 +1,6 @@
 Trustthis::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
   resources :symptoms
 
 
@@ -10,7 +12,7 @@ Trustthis::Application.routes.draw do
 
   get "menu" => 'pages#edit_menu'
 
-  get "symptoms" => 'pages#symptoms'
+  # get "symptoms" => 'pages#symptoms'
 
   get "bc" => 'pages#bc'
 

@@ -10,6 +10,7 @@ gem "paperclip", "~> 3.0"
 gem 'slim-rails'
 gem 'turbolinks'
 gem 'pg_search'
+gem 'ckeditor'
 
 source 'https://rubygems.org'
 ruby '2.0.0'
