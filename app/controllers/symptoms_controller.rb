@@ -2,7 +2,11 @@ class SymptomsController < ApplicationController
   before_filter :authenticate, except: [:index, :show]
 
   def index
-    @symptoms = Symptom.order("symptoms.order").all
+    if params[:q]
+      @symptoms = Symptom.search_by_full_name(params[:q]).order("symptoms.order")
+    else
+      @symptoms = Symptom.order("symptoms.order").all
+    end
   end
 
   def show
