@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'rails', '3.2.13'
 gem "pg"
 gem 'jquery-rails'
@@ -11,9 +13,6 @@ gem 'slim-rails'
 gem 'turbolinks'
 gem 'pg_search'
 gem 'ckeditor'
-
-source 'https://rubygems.org'
-ruby '2.0.0'
 
 group :development do
   gem 'guard-livereload'
@@ -28,7 +27,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier'
-  gem 'bootstrap-sass', '~> 2.2.2.0'
+  gem 'bootstrap-sass', '>= 2.3.2.0'
   gem "twitter-bootstrap-rails"
 end
 
