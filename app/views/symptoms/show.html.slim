@@ -1,22 +1,25 @@
-h3
+h1
   = @symptom.title
 p
   = raw @symptom.content
 
+.row
+  .span2
+    - if @previous_symptom.present?
+      .arrow
+        = link_to @previous_symptom do
+          i.icon-circle-arrow-left
+    - else
+      small already the first one
 
-.arrow
-  - if @previous_symptom.present?
-    = link_to @previous_symptom do
-      i.icon-circle-arrow-left
-  - else
-    small this is already the first one
-.arrow
-  - if @next_symptom.present?
-    = link_to @next_symptom do
-      i.icon-circle-arrow-right
-  - else
-    small this is alarady the last one
+  .span2
+    - if @next_symptom.present?
+      .arrow
+        = link_to @next_symptom do
+          i.icon-circle-arrow-right
+    - else
+      small alarady the last one
 
-= link_to 'Edit', edit_symptom_path(@symptom)
-'|
-= link_to 'Back', symptoms_path
+hr
+- if current_user.admin
+  = link_to 'Edit', edit_symptom_path(@symptom), class: 'btn'
