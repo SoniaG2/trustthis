@@ -1,11 +1,21 @@
-p#notice = notice
-
-p
-  strong Title:
+h3
   = @symptom.title
 p
-  strong Content:
-  = @symptom.content
+  = raw @symptom.content
+
+
+.arrow
+  - if @previous_symptom.present?
+    = link_to @previous_symptom do
+      i.icon-circle-arrow-left
+  - else
+    small this is already the first one
+.arrow
+  - if @next_symptom.present?
+    = link_to @next_symptom do
+      i.icon-circle-arrow-right
+  - else
+    small this is alarady the last one
 
 = link_to 'Edit', edit_symptom_path(@symptom)
 '|
