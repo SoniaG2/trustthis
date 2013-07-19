@@ -47,3 +47,10 @@ li.dropdown.open ul.dropdown-menu li a {
 .condom img {
   margin: 20px;
 }
+
+.arrow {
+  font-size: 30px;
+  &:hover {
+    text-decoration: none;
+  }
+}
