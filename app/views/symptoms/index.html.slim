@@ -1,7 +1,7 @@
 div.hero-unit
   h2 T2 Symptoms Library
   p Sex info that is medically accurate and true when you want it.
-  - if current_user.admin
+  - if current_user.present? && current_user.admin
     = link_to 'New Symptom', new_symptom_path
 
 div.menu-body
