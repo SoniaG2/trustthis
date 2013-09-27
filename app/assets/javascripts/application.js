@@ -12,5 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require bootstrap
+//= require ckeditor/init
 //= require_tree .
+
+$(document).ready(function(){
+  $('form[data-remote]').bind("ajax:before", function(){
+    for (instance in CKEDITOR.instances){
+      CKEDITOR.instances[instance].updateElement();
+    }
+  });
+});

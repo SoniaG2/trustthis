@@ -1,0 +1,25 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      ul.nav
+        li = link_to "T2: TrustThis", menu_path, class: 'brand'
+        li = link_to "Menu", menu_path
+        li = link_to "Find a Clinic", '#'
+        li = link_to "Ask an Expert", expert_path
+        li = link_to "About", root_path
+        li.navbar-search.pull-left = form_tag symptoms_path, method: :get do
+           = text_field_tag :q
+
+      ul.nav.pull-right
+        li.dropdown
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-user"></i> Account
+            <b class="caret"></b>
+          </a>
+
+          ul.dropdown-menu
+            - if user_signed_in?
+              li = link_to "Logout", destroy_user_session_path, method: :delete
+            - else
+              li = link_to "Sign In", new_user_session_path
+              li = link_to "Edit Password", edit_user_registration_path

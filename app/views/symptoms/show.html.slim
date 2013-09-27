@@ -1,0 +1,25 @@
+h1
+  = @symptom.title
+p
+  = raw @symptom.content
+
+.row
+  .span2
+    - if @previous_symptom.present?
+      .arrow
+        = link_to @previous_symptom do
+          i.icon-circle-arrow-left
+    - else
+      small already the first one
+
+  .span2
+    - if @next_symptom.present?
+      .arrow
+        = link_to @next_symptom do
+          i.icon-circle-arrow-right
+    - else
+      small alarady the last one
+
+hr
+- if current_user && current_user.admin
+  = link_to 'Edit', edit_symptom_path(@symptom), class: 'btn'

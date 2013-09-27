@@ -1,30 +1,32 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'rails', '3.2.13'
+gem "pg"
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'therubyracer'
 gem "paperclip", "~> 3.0"
+gem 'slim-rails'
+gem 'turbolinks'
+gem 'pg_search'
+gem 'ckeditor'
+gem "twitter-bootstrap-rails"
 
-#To set your Ruby version add this line to your Gemfile:"
-source 'https://rubygems.org'
-ruby '1.9.3'
-
-
-group :production do
-  gem 'pg'
-end
-
-group :development, :test do
-  gem 'sqlite3'
+group :development do
+  gem 'guard-livereload'
+  gem 'terminal-notifier-guard'
+  gem 'debugger'
+  gem 'quiet_assets'
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier'
-  gem 'bootstrap-sass', '~> 2.2.2.0'
-  
-end
+  gem 'bootstrap-sass', '>= 2.3.2.0'end
 

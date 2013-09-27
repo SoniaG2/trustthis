@@ -1,0 +1,56 @@
+.btn {
+  border-radius: 0;
+}
+
+#footer {
+  margin-top: 40px;
+  a {
+    padding: 20px;
+      &:hover {
+        text-decoration: none;
+      }
+  }
+}
+
+#menu-head {
+  margin: 20px;
+}
+
+.menu-body {
+  li.span5 {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-right: 25px;
+  }
+}
+
+.navbar-inner {
+  height: 53px;
+  ul.nav li {
+    a.brand, a {
+      color: white;
+    }
+  }
+}
+
+.container .row {
+  margin-top: 90px;
+}
+
+li.dropdown.open ul.dropdown-menu li a {
+  color: black;
+  &:hover {
+    color: white;
+  }
+}
+
+.condom img {
+  margin: 20px;
+}
+
+.arrow {
+  font-size: 30px;
+  a:hover {
+    text-decoration: none;
+  }
+}

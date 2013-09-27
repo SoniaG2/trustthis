@@ -1,45 +1,36 @@
 Trustthis::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
+  resources :symptoms
+
+
   resources :pins
 
   devise_for :users
 
-root :to => 'pages#about'
-#set welcome page as the "home page" - first thing people see when go to site
-#get "welcome" => 'pages#welcome'
- # root :to => 'pages#welcome'
+  root :to => 'pages#about'
 
-get "menu" => 'pages#menu'
-  root :to => 'pages#menu'
+  get "menu" => 'pages#edit_menu'
 
-get "symptoms" => 'pages#symptoms'
-  root :to => 'pages#symptoms'
+  # get "symptoms" => 'pages#symptoms'
 
-get "bc" => 'pages#bc'
-  root :to => 'pages#bc'
+  get "bc" => 'pages#bc'
 
-get "condom" => 'pages#condom'
-  root :to => 'pages#condom'
+  get "condom" => 'pages#condom'
 
-get "pregoptions" => 'pages#pregoptions'
-  root :to => 'pages#pregoptions'
+  get "pregoptions" => 'pages#pregoptions'
 
-get "expert" => 'pages#expert'
-  root :to => 'pages#expert'
+  get "expert" => 'pages#expert'
 
-get "services" => 'pages#services'
-  root :to => 'pages#services'
+  get "services" => 'pages#services'
 
-get "rateapp" => 'pages#rateapp'
-  root :to => 'pages#rateapp'
+  get "rateapp" => 'pages#rateapp'
 
-get "skg" => 'pages#skg'
-  root :to => 'pages#skg'
+  get "skg" => 'pages#skg'
 
-get "stayhealthy" => 'pages#stayhealthy'
-  root :to =>'pages#stayhealthy'
+  get "stayhealthy" => 'pages#stayhealthy'
 
-get "commpartners" => 'pages#commpartners'
-  root :to =>'pages#commpartners'
+  get "commpartners" => 'pages#commpartners'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
